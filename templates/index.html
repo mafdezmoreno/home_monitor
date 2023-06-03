@@ -1,0 +1,33 @@
+<!doctype html>
+ 
+<head>
+   <title>My Server</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+   <meta http-equiv="refresh" content="20" >
+   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  </head>
+<body>
+<div class="container">
+<div class="row">
+    <div class="col-sm">
+        <h1>{{title}}</h1>
+        <h2 style="text-align: right; margin-right: 40px;">
+            {{ time }}
+        </h2>
+        <h2>
+            Temp is:
+        </h2>
+        <h2 style="margin-left: 80px;">
+          {{temp}}C
+        </h2> 
+        <h2>
+            Humidity is:
+        </h2>
+        <h2 style="margin-left: 80px;">
+            {{humi}}%
+        </h2>
+    </div>
+</div>
+</div>
+</body>
